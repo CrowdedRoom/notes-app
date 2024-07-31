@@ -1,5 +1,6 @@
 import type {Metadata} from "next";
 import {ClerkProvider} from "@clerk/nextjs";
+import {Toaster} from "@/components/ui/sonner";
 
 import "./globals.css";
 import Header from "@/components/Header";
@@ -26,6 +27,7 @@ export default function RootLayout({
               {children}
             </div>
           </div>
+          <Toaster position="top-center"/>
         </body>
       </html>
     </ClerkProvider>
